@@ -95,7 +95,7 @@ header{
 .menu .limitedWidthBlock {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
 	padding-bottom: 5px;
 	border-bottom: 10px solid transparent;
 }
@@ -144,7 +144,7 @@ header{
     display: flex;
     flex-direction: column;
 	align-items: center;
-	width: 100vw;
+	width: 90vw;
 }
 
 .background{
@@ -512,7 +512,7 @@ video{
 		position: fixed;
 		color: purple;
 		top: 5px;
-		right: 50px;
+		right: 1vw;
 		font-size: 40px;
 		width: 30%;
 		text-align: right;
@@ -567,6 +567,14 @@ video{
 
 	.pad{
 		width: 90%;
+	}
+
+	.slideshow-container {
+		max-width: 160px;
+	}
+	
+	.topnav a.icon {
+		top: 15px;
 	}
 }
 
@@ -634,7 +642,7 @@ footer .footerSecondary {
 	.menu .limitedWidthBlock {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 	}
 	.logo {
 		margin-top: 20px;
