@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Kanap</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Plateforme incroyable de e-commerce">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a0632bfd7d.js" crossorigin="anonymous"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <header id="header">
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+      <div class="limitedWidthBlockContainer menu">
+        <div class="limitedWidthBlock">
+          <div>
+            <a href="index.html">
+              <img class="logo" src="images/logo_jeu_ de_lettres_Family's_cubes.webp" alt="Logo de l'entreprise">
+            </a>
+          </div>
+          <nav>
+            <ul>
+              <a href="#header"><li>Accueil</li></a>
+              <a href="#video"><li>Comment jouer</li></a>
+              <a href="#"><li>Notre histoire</li></a>
+              <a href="#bienfait"><li>Les bienfaits du jeu</li></a>
+              <a href="#order"><li>J'en veux un!</li></a>
+              <a href="tel:+33665748986"><li>06.65.74.89.86</li></a>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="topnav">
+          <div id="myLinks">
+            <a href="#header"><li>Accueil</li></a>
+            <a href="#video"><li>Comment jouer</li></a>
+            <a href="#"><li>Notre histoire</li></a>
+            <a href="#bienfait"><li>Les bienfaits du jeu</li></a>
+            <a href="#order"><li>J'en veux un!</li></a>
+            <a href="tel:+33665748986"><li>06.65.74.89.86</li></a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="border: transparent;">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="limitedWidthBlockContainer">
+      <div class="limitedWidthBlock background">
+        <div class="banniere" alt="Baniere">
+          <h1>Voici<br>Family's Cubes</h1>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="sousSlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="images/1.svg">
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="sousSlides">
+                    <div class="numbertext"> 2/ 6</div>
+                    <img src="images/2.svg">
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="sousSlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="images/3.svg">
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="sousSlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images/4.svg">
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="sousSlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images/5.svg">
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="sousSlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images/6.svg">
+                </div>
+            </div>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span>
+            </div>
+            
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+        </div>
+        <div class="blanc" id="video">
+          <div class="violet">
+            <i class="fa-solid fa-minus" id="trait1"></i>
+            <h2>Apprendre à jouer en 30 secondes</h2>
+            <i class="fa-solid fa-minus" id="trait2"></i>
+          </div>
+          <div class="video">
+            <video poster="images/video_img.png" controls>
+              <source src="https://video.wixstatic.com/video/66a274_7112a9708844460c9ff66b9e234c4d0d/1080p/mp4/file.mp4" type=video/mp4>
+            </video>
+          </div>
+        </div>
+
+        <div class="limitedWidthBlock" id="bienfait">
+          <h2 style="color: purple;">Des bienfaits pour toute la famille</h2>
+          <p><strong>DE 3 A 4 ans</strong><br>L'enfants va construire des tours avec des cubes magnétiques et se familiariser avec l’univers des lettres de l’alphabet</p>
+          <p><strong>DE 4 A 5 ans</strong><br>L'enfant va apprendre les lettres de l'alphabet</p>
+          <p><strong>DE 5 A 7 ans</strong><br>L'enfant apprend à distinguer les voyelles,  les consonnes, les syllabes et à orthographier les mots.<br>Family’s cubes va être un puissant compagnon d’apprentissage pour stimuler la lecture, renforcer la mémorisation et aider l’enfant à mémoriser l’orthographe des mots de façon ludique</p>
+          <p><strong>DE 8 A 99 ans</strong><br>Stimuler les acquis,  la manipulation et renforcer la mémorisation<br> Jeu de société très prenant qui pousse à chercher des mots dans ses connaissances. Pour gagner la partie, le joueur doit trouver le meilleur mot en 2 minutes donc le joueur est ultra stimulé, le vocabulaire s’en trouve considérablement enrichi   </p>
+        </div>
+
+        <div class="limitedWidthBlock">
+          <section class="item">
+            <article class="article">
+              <div class="item__img">
+                <img src="images/FAMILY'S CUBES.svg" alt="Photographie d'un canapé">
+              </div>
+              <div class="item__content">
+                <div class="item__content__titlePrice">
+                  <h2 id="title">Family's Cubes</h2>
+                  <p>Prix : <strong>35€</strong></p>
+                </div>
+  
+                <div class="item__content__description">
+                  <p id="description"><strong>Le coffret Family's Cubes contient:</strong><br>
+                    20 Cubes magnétiques en bois de cerisier dont:<br>                
+                    - 10 Cubes "voyelles"<br>
+                    - 10 Cubes "consonnes"<br>                    
+                    -   1 Sablier de 2 minutes<br>
+                    Chaque cube a 6 faces dont 2 faces colorées aimantées.</p>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+
+        <main class="limitedWidthBlockContainer pad">
+          <h2 style="color: purple;">Pour passer commande</h2>
+          <div class="cart__order" id="order">
+            <form method="get" class="cart__order__form">
+              <div class="cart__order__form__question">
+                <label for="quantite">Quantité </label>
+                <input type="number" class="itemQuantity" name="itemQuantity" min="1" max="100" value="1" required>
+                <p id="lastNameErrorMsg"></p>
+              </div>
+              <div class="cart__order__form__question">
+                <label for="firstName">Prénom: </label>
+                <input type="text" name="firstName" id="firstName" required>
+                <p id="firstNameErrorMsg"><!-- ci est un message d'erreur --></p>
+              </div>
+              <div class="cart__order__form__question">
+                <label for="lastName">Nom: </label>
+                <input type="text" name="lastName" id="lastName" required>
+                <p id="lastNameErrorMsg"></p>
+              </div>              
+              <div class="cart__order__form__question">
+                <label for="address">Adresse: </label>
+                <input type="text" name="address" id="address" required>
+                <p id="addressErrorMsg"></p>
+              </div>
+              <div class="cart__order__form__question">
+                <label for="city">Ville: </label>
+                <input type="text" name="city" id="city" required>
+                <p id="cityErrorMsg"></p>
+              </div>
+              <div class="cart__order__form__question">
+                <label for="number">Téléphone: </label>
+                <input type="tel" name="number" id="number" required>
+                <p id="emailErrorMsg"></p>
+              </div>
+              <div class="cart__order__form__question">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required>
+                <p id="emailErrorMsg"></p>
+              </div>
+              <div class="cart__order__form__submit">
+                <input type="submit" value="Envoyer ma demande!" id="order">
+              </div>
+            </form>
+          </div>
+        </main>
+
+      </div>
+    </main>
+    
+    <footer>
+      <div class="limitedWidthBlockContainer footerSecondary">
+        <div class="limitedWidthBlock">
+          <p>© Copyright 2023 - 2042 | All Rights Reserved | Powered by love</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
